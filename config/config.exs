@@ -122,7 +122,7 @@ config :surface, :components, [
   {MoonWeb.Components.SidebarLink, propagate_context_to_slots: false}
 ]
 
-config :tails, colors_file: Path.expand("/../../assets/colors.json")
+config :tails, colors_file: "/../../assets/colors.json"
 
 config :tails,
   variants:
