@@ -17,7 +17,7 @@ defmodule LiveAirWeb.Router do
   scope "/", LiveAirWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", HomeLive.Index, :new
   end
 
   # Other scopes may use custom stacks.
