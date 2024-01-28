@@ -61,7 +61,7 @@ config :logger, :console,
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 
-import_config Path.expand("../deps/moon/config/surface.exs")
+import_config Path.expand("../deps/moon/config/surface.exs", __DIR__)
 
 config :surface, :components, []
 
