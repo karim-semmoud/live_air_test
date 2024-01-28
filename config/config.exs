@@ -61,6 +61,11 @@ config :logger, :console,
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 
+# config :tails, colors_file: Path.expand(__ENV__.file <> "/../../assets/colors.json")
+# config :tails, colors_file: Path.expand("../deps/moon/config/surface.exs")
+
+import Config
+
 config :surface, :components, [
   {Surface.Components.Form.ErrorTag,
    default_translator: {MoonWeb.ErrorHelpers, :translate_error}},
@@ -122,11 +127,11 @@ config :surface, :components, [
   {MoonWeb.Components.SidebarLink, propagate_context_to_slots: false}
 ]
 
-config :tails, colors_file: "/../../assets/colors.json"
+# config :tails, colors_file: Path.expand(__ENV__.file <> "/../../assets/colors.json")
 
-config :tails,
-  variants:
-    ~w(moon-checked moon-selected moon-active moon-disabled moon-not-checked moon-not-selected moon-not-active moon-not-disabled moon-open moon-error not-last not-first empty)
+# config :tails,
+#   variants:
+#     ~w(moon-checked moon-selected moon-active moon-disabled moon-not-checked moon-not-selected moon-not-active moon-not-disabled moon-open moon-error not-last not-first empty)
 
 
 # Import environment specific config. This must remain at the bottom
