@@ -6,3 +6,5 @@
 @import "tailwindcss/utilities";
 
 /* This file is for your main application CSS */
+@import '../../deps/moon/assets/css/app.css';
+@import '../../deps/moon/priv/static/themes/moon.css';

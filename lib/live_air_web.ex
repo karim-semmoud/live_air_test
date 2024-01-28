@@ -52,7 +52,7 @@ defmodule LiveAirWeb do
   def live_view do
     quote do
       use Phoenix.LiveView,
-        layout: {LiveAirWeb.Layouts, :app}
+        layout: {LiveAirWeb.Layouts, :master}
 
       unquote(html_helpers())
     end
@@ -115,7 +115,7 @@ defmodule LiveAirWeb do
   def surface_live_view do
     quote do
       use Surface.LiveView,
-        layout: {LiveAirWeb.Layouts, :app}
+        layout: {LiveAirWeb.Layouts, :master}
 
       unquote(html_helpers())
     end

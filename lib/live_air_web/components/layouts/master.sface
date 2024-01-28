@@ -1,0 +1,5 @@
+<div class="master">
+  <main class="master_main">
+    {@inner_content}
+  </main>
+</div>
