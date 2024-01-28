@@ -54,11 +54,12 @@ config :live_air, LiveAirWeb.Endpoint,
 
 # Watch static and templates for browser reloading.
 config :live_air, LiveAirWeb.Endpoint,
+  reloadable_compilers: [:gettext, :elixir, :app, :surface],
   live_reload: [
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/live_air_web/(controllers|live|components)/.*(ex|heex)$"
+      ~r"lib/live_air_web/(controllers|live|components)/.*(ex|heex|sface|js)$"
     ]
   ]
 
